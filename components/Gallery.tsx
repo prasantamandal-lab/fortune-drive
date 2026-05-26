@@ -26,19 +26,18 @@ export default function Gallery() {
         </h2>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-
+        <div className="grid grid-cols-5 md:grid-cols-8 lg:grid-cols-8 gap-2">
           {images.map((image, index) => (
 
             <div
               key={index}
-              className="overflow-hidden rounded-[30px] bg-[#111133] hover:scale-105 transition duration-300 shadow-xl hover:shadow-cyan-500/20"
+              className="overflow-hidden rounded-xl bg-[#0f173d] p-1"
             >
 
               <img
                 src={image}
                 alt={`Gallery ${index + 1}`}
-                className="w-full h-[280px] object-cover"
+                className="w-full h-auto object-contain rounded-lg"
               />
 
             </div>
