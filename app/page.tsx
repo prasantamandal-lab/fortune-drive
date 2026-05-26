@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Cars from "@/components/Cars";
 import CarList from "@/components/CarList";
+import Cars from "@/components/Cars";
 import Gallery from "@/components/Gallery";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
@@ -16,9 +16,9 @@ export default function Home() {
 
       <Hero />
 
-      <Cars />
-
       <CarList />
+
+      <Cars />
 
       <Gallery />
 
