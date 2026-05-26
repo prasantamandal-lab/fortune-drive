@@ -45,7 +45,7 @@ export default function WhyChooseUs() {
       <div className="max-w-7xl mx-auto">
 
         {/* Heading */}
-        <h2 className="text-6xl font-bold text-cyan-400 text-center mb-6">
+        <h2 className="text-5xl font-bold text-cyan-400 text-center mb-6">
           Why Choose Us
         </h2>
 
