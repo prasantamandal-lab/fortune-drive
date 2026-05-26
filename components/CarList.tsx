@@ -64,6 +64,30 @@ const cars = [
   },
 
   {
+    name: "Mahindra Thar ROX",
+    image: "/cars/Thar ROX.jpg",
+    seats: 5,
+    transmission: "Manual",
+    fuel: "Petrol",
+    price: 3999,
+    model: "Thar ROX",
+    price12: 3599,
+    price24: 3999,
+  },
+
+   {
+    name: "TATA Sierra",
+    image: "/cars/TATA Sierra.jpg",
+    seats: 5,
+    transmission: "Automatic",
+    fuel: "Petrol",
+    price: 2699,
+    model: "Sierra",
+    price12: 2199,
+    price24: 2699,
+  },
+
+  {
     name: "Suzuki Fronx",
     image: "/cars/fronx.jpg",
     seats: 5,
@@ -98,9 +122,85 @@ const cars = [
     price12: 1499,
     price24: 1999,
   },
+
+  {
+    name: "Hyundai Exter",
+    image: "/cars/Hyundai Exter.jpg",
+    seats: 5,
+    transmission: "Manual",
+    fuel: "Petrol",
+    price: 1999,
+    model: "Hyundai Exter",
+    price12: 1499,
+    price24: 1999,
+  },
+
+  {
+    name: "Hyundai Creata",
+    image: "/cars/Hyundai Creata.jpg",
+    seats: 5,
+    transmission: "Manual",
+    fuel: "Petrol",
+    price: 2699,
+    model: "Hyundai Creata",
+    price12: 2199,
+    price24: 2699,
+  },
+
+   {
+    name: "Kia carens",
+    image: "/cars/Kia carens.jpg",
+    seats: 7,
+    transmission: "Manual",
+    fuel: "Petrol",
+    price: 2999,
+    model: "Kia carens",
+    price12: 2499,
+    price24: 2999,
+  },
+
+    {
+    name: "Hyundai venue SX",
+    image: "/cars/venue SX.jpg",
+    seats: 5,
+    transmission: "Manual",
+    fuel: "Petrol",
+    price: 2299,
+    model: "venue SX top model",
+    price12: 1699,
+    price24: 2299,
+  },
+
+   {
+    name: "Hyundai i20",
+    image: "/cars/i20 sunroof.jpg",
+    seats: 5,
+    transmission: "Manual",
+    fuel: "Petrol",
+    price: 1999,
+    model: "i20 sunroof 2025 model",
+    price12: 1499,
+    price24: 1999,
+  },
+
+   {
+    name: "Suzuki-baleno",
+    image: "/cars/Suzuki-baleno.jpg",
+    seats: 5,
+    transmission: "Manual",
+    fuel: "Petrol",
+    price: 1799,
+    model: "Toyota Taisor",
+    price12: 1499,
+    price24: 1799,
+  },
 ];
 
 export default function CarList() {
+
+  const [detailsOpen, setDetailsOpen] = useState(false);
+
+const [selectedDetails, setSelectedDetails] = useState<any>(null);
 
   const [activeCard, setActiveCard] = useState<number | null>(null);
 
@@ -250,12 +350,18 @@ Contact Number: ${contact}`;
               </div>
 
               {/* View Details Button */}
-              <button
-                onClick={() => toggleDetails(index)}
-                className="w-full border border-gray-500 py-2 rounded-xl text-sm text-white hover:border-cyan-400 hover:text-cyan-400 transition"
-              >
-                View Details
-              </button>
+             <button
+  onClick={() => {
+
+    setSelectedDetails(car);
+
+    setDetailsOpen(true);
+
+  }}
+  className="w-full border border-gray-500 py-2 rounded-xl text-sm text-white hover:border-cyan-400 hover:text-cyan-400 transition"
+>
+  View Details
+</button>
 
               {/* Hidden Details */}
               {activeCard === index && (
@@ -410,6 +516,63 @@ Contact Number: ${contact}`;
         </div>
 
       )}
+
+      {/* Details Popup */}
+{detailsOpen && selectedDetails && (
+
+  <div
+    onClick={() => setDetailsOpen(false)}
+    className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center px-4"
+  >
+
+    <div
+      onClick={(e) => e.stopPropagation()}
+      className="bg-[#111c44] rounded-3xl p-8 max-w-md w-full text-white"
+    >
+
+      <img
+        src={selectedDetails.image}
+        alt={selectedDetails.name}
+        className="w-full h-52 object-cover rounded-2xl mb-6"
+      />
+
+      <h2 className="text-3xl font-bold mb-5">
+        {selectedDetails.name}
+      </h2>
+
+      <div className="space-y-3 text-lg text-gray-300">
+
+        <p>
+          🚗 Model: {selectedDetails.model}
+        </p>
+
+        <p>
+          ⛽ Fuel: {selectedDetails.fuel}
+        </p>
+
+        <p>
+          👥 Seats: {selectedDetails.seats}
+        </p>
+
+        <p>
+          ⚙ Transmission: {selectedDetails.transmission}
+        </p>
+
+        <p>
+          🕒 12 Hrs: ₹{selectedDetails.price12}
+        </p>
+
+        <p>
+          📅 24 Hrs: ₹{selectedDetails.price24}
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+)}
 
     </section>
 
