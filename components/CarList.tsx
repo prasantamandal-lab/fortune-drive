@@ -46,7 +46,7 @@ const cars = [
     transmission: "Automatic",
     fuel: "Petrol",
     price: 2699,
-    model: "Mahindra Thar",
+    model: "Grand Vitara",
     price12: 2199,
     price24: 2699,
   },
