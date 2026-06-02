@@ -30,7 +30,7 @@ const cars = [
   {
     name: "Mahindra Thar",
     image: "/cars/thar.jpg",
-    seats: 4,
+    seats: 5,
     transmission: "Manual",
     fuel: "Diesel",
     price: 3299,
@@ -40,15 +40,27 @@ const cars = [
   },
 
   {
+    name: "Grand Vitara",
+    image: "/cars/Vitara.jpg",
+    seats: 5,
+    transmission: "Automatic",
+    fuel: "Petrol",
+    price: 2699,
+    model: "Mahindra Thar",
+    price12: 2199,
+    price24: 2699,
+  },
+
+  {
     name: "KIA Sonet",
     image: "/cars/sonet.jpg",
     seats: 5,
     transmission: "Manual",
     fuel: "Petrol",
-    price: 2299,
+    price: 2199,
     model: "KIA Sonet",
     price12: 1799,
-    price24: 2299,
+    price24: 2199,
   },
 
   {
@@ -105,10 +117,10 @@ const cars = [
     seats: 5,
     transmission: "Manual",
     fuel: "Petrol",
-    price: 1599,
+    price: 1799,
     model: "Suzuki Swift",
     price12: 1299,
-    price24: 1599,
+    price24: 1799,
   },
 
   {
@@ -129,10 +141,10 @@ const cars = [
     seats: 5,
     transmission: "Manual",
     fuel: "Petrol",
-    price: 1999,
+    price: 1799,
     model: "Hyundai Exter",
     price12: 1499,
-    price24: 1999,
+    price24: 1799,
   },
 
   {
@@ -155,7 +167,7 @@ const cars = [
     fuel: "Petrol",
     price: 2999,
     model: "Kia carens",
-    price12: 2499,
+    price12: 2199,
     price24: 2999,
   },
 
@@ -165,10 +177,10 @@ const cars = [
     seats: 5,
     transmission: "Manual",
     fuel: "Petrol",
-    price: 2299,
+    price: 2199,
     model: "venue SX top model",
     price12: 1699,
-    price24: 2299,
+    price24: 2199,
   },
 
    {
@@ -177,20 +189,20 @@ const cars = [
     seats: 5,
     transmission: "Manual",
     fuel: "Petrol",
-    price: 1999,
+    price: 1799,
     model: "i20 sunroof 2025 model",
     price12: 1499,
-    price24: 1999,
+    price24: 1799,
   },
 
    {
     name: "Suzuki-baleno",
     image: "/cars/Suzuki-baleno.jpg",
     seats: 5,
-    transmission: "Manual",
+    transmission: "Automatic",
     fuel: "Petrol",
     price: 1799,
-    model: "Toyota Taisor",
+    model: "Suzuki-baleno",
     price12: 1499,
     price24: 1799,
   },
