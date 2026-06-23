@@ -16,6 +16,30 @@ const cars = [
   },
 
   {
+    name: "Audi Q6",
+    image: "/cars/Audi Q6.jpg",
+    seats: 5,
+    transmission: "Manual",
+    fuel: "Petrol",
+    price: 7499,
+    model: "Audi Q6",
+    price12: 4999,
+    price24: 7499,
+  },
+
+  {
+    name: "Fortuner Legender",
+    image: "/cars/Fortuner Legender.jpg",
+    seats: 7,
+    transmission: "Manual",
+    fuel: "Diesel",
+    price: 7499,
+    model: "Fortuner Legender",
+    price12: 4999,
+    price24: 7599,
+  },
+
+  {
     name: "XUV700",
     image: "/cars/xuv700.jpg",
     seats: 7,
