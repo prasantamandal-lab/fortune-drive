@@ -39,6 +39,18 @@ const cars = [
     price24: 7599,
   },
 
+   {
+    name: "Mahindra Scorpio N",
+    image: "/cars/scorpio N.jpg",
+    seats: 7,
+    transmission: "Manual",
+    fuel: "Diesel",
+    price: 3999,
+    model: "Scorpio N",
+    price12: 2999,
+    price24: 3999,
+  },
+
   {
     name: "XUV700",
     image: "/cars/xuv700.jpg",
