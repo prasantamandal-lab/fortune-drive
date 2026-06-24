@@ -17,10 +17,10 @@ const cars = [
 
   {
     name: "Audi Q6",
-    image: "/cars/Audi Q6.jpg",
+    image: "/cars/Audi Q5.jpg",
     seats: 5,
-    transmission: "Manual",
-    fuel: "Petrol",
+    transmission: "Automatic",
+    fuel: "Diesel",
     price: 7499,
     model: "Audi Q6",
     price12: 4999,
@@ -31,7 +31,7 @@ const cars = [
     name: "Fortuner Legender",
     image: "/cars/Fortuner Legender.jpg",
     seats: 7,
-    transmission: "Manual",
+    transmission: "Automatic",
     fuel: "Diesel",
     price: 7499,
     model: "Fortuner Legender",
