@@ -16,13 +16,13 @@ const cars = [
   },
 
   {
-    name: "Audi Q6",
+    name: "Audi Q5",
     image: "/cars/Audi Q5.jpg",
     seats: 5,
     transmission: "Automatic",
     fuel: "Diesel",
     price: 7499,
-    model: "Audi Q6",
+    model: "Audi Q5",
     price12: 4999,
     price24: 7499,
   },
