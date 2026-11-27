@@ -123,18 +123,6 @@ const cars = [
     price24: 3999,
   },
 
-   {
-    name: "TATA Sierra",
-    image: "/cars/TATA Sierra.jpg",
-    seats: 5,
-    transmission: "Automatic",
-    fuel: "Petrol",
-    price: 2699,
-    model: "Sierra",
-    price12: 2199,
-    price24: 2699,
-  },
-
   {
     name: "Suzuki Fronx",
     image: "/cars/fronx.jpg",
